@@ -1,3 +1,5 @@
+@import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
 .App {
   text-align: center;
 }
@@ -24,6 +26,7 @@
   color: white;
 }
 
+
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +38,87 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* //custom */
+div#root, .App, .ant-layout{
+  height: 100%;
+}
+.ant-layout{
+  background-color: #fff;
+}
+.ant-layout-header{
+  background: none;
+  width: 100%;
+}
+/* .ant-input{
+  height:60px;
+} */
+h1.ant-typography, .ant-typography h1{
+  font-family: 'Lexend Mega', sans-serif;
+  color:white;
+  font-size: 35px;
+}
+.ant-typography span{ opacity: 0.5}
+.m-r{
+  margin-right: 30px
+}
+.App__row{
+  /* border: 1px solid yellow; */
+  height:35%;
+  
+}
+.App__column{
+  background-color: #2B2F8E;
+  display: flex;
+  align-items: center;
+}
+.bottom-right-rd{
+  border-radius: 0 0 60px 0;
+}
+.ant-input {
+  background: none;
+  border: none;
+  color: white;
+  font-family: 'Lexend Mega', sans-serif;
+}
+/* .ant-input::placeholder{
+  color: #07BFDB;
+} */
+.ant-input:focus, .ant-input-focused{
+  box-shadow: none;
+  border-bottom: 1px solid white;
+}
+.i-s{
+  width: 40%;
+  font-size:25px;
+  text-align: center;
+}
+#content{
+  /* border: 2px dotted black; */
+  height:65%;
+}
+#content > div:first-of-type{
+
+  margin-top: -50px;
+  display: flex;
+  justify-content: space-around;
+  height: 122px;
+}
+.s-o{
+  background:white;
+  border: 1px solid transparent;
+  font-size: 40px;
+  padding: 40px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.active{
+  border: 1px solid #2B2F8E;
+  color: #2B2F8E;
+}
+.aka{
+  color: #aaa
+}
+.ant-input[disabled]{
+  background: none;
 }
