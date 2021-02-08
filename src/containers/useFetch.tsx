@@ -21,6 +21,7 @@ export const useFetch = (query: string) => {
             } catch (err) {
                 console.log(err)
                 setIsError(true);
+                setData([])
             }
 
             setIsLoading(false);

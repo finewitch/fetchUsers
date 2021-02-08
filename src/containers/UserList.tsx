@@ -10,10 +10,8 @@ import sortUsers from '../utils/sortUsers'
 import { useFetch } from '../containers/useFetch'
 
 function UserList() {
-  console.log('hh')
   const [{ data, isLoading, isError }] = useFetch('users')
   const [users, setUsers] = useState<User[]>(data)
-  console.log(data, isLoading, isError)
   const [searchResults, setSearchResults] = useState<User[]>([])
   const [searchTerm, setSearchTerm] = useState<string>("")
   const [asc, setAsc] = useState<boolean>(false)
@@ -69,12 +67,16 @@ function UserList() {
           <SortDescendingOutlined className={"s-o" + (desc ? ` active` : ``)} onClick={setDescending} />
         </Col>
         <Col span={16} offset={4}>
+          {isError ? (
+            <div>There was a problem fetching users</div>
+          ) : null}
           <Divider />
           {isLoading ? (
             <Spin size="large" />
           ) : (
               <Table columns={columns} dataSource={searchTerm === '' ? users : searchResults} />
             )}
+
         </Col>
       </Row>
     </Layout >

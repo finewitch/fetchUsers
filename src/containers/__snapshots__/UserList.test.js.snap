@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders when there are no users 1`] = `
+<section
+  className="ant-layout"
+>
+  <div
+    className="ant-row ant-row-start App__row"
+    style={
+      Object {
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+      }
+    }
+  >
+    <div
+      className="ant-col ant-col-24 App__column"
+      style={Object {}}
+    >
+      <header
+        className="ant-layout-header"
+      >
+        <h1
+          className="ant-typography"
+          style={
+            Object {
+              "WebkitLineClamp": undefined,
+            }
+          }
+        >
+          <span
+            aria-label="user"
+            className="anticon anticon-user m-r"
+            role="img"
+          >
+            <svg
+              aria-hidden="true"
+              data-icon="user"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M858.5 763.6a374 374 0 00-80.6-119.5 375.63 375.63 0 00-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 00-80.6 119.5A371.7 371.7 0 00136 901.8a8 8 0 008 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 008-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"
+              />
+            </svg>
+          </span>
+          Users List
+        </h1>
+        <input
+          className="ant-input ant-input-disabled i-s"
+          disabled={true}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          placeholder="Type name"
+          type="text"
+          value=""
+        />
+      </header>
+    </div>
+  </div>
+  <div
+    className="ant-row"
+    id="content"
+    style={
+      Object {
+        "marginBottom": undefined,
+        "marginLeft": undefined,
+        "marginRight": undefined,
+        "marginTop": undefined,
+      }
+    }
+  >
+    <div
+      className="ant-col ant-col-16 ant-col-offset-4"
+      style={Object {}}
+    >
+      <span
+        aria-label="sort-ascending"
+        className="anticon anticon-sort-ascending s-o"
+        onClick={[Function]}
+        role="img"
+        tabIndex={-1}
+      >
+        <svg
+          aria-hidden="true"
+          data-icon="sort-ascending"
+          fill="currentColor"
+          focusable="false"
+          height="1em"
+          viewBox="64 64 896 896"
+          width="1em"
+        >
+          <path
+            d="M839.6 433.8L749 150.5a9.24 9.24 0 00-8.9-6.5h-77.4c-4.1 0-7.6 2.6-8.9 6.5l-91.3 283.3c-.3.9-.5 1.9-.5 2.9 0 5.1 4.2 9.3 9.3 9.3h56.4c4.2 0 7.8-2.8 9-6.8l17.5-61.6h89l17.3 61.5c1.1 4 4.8 6.8 9 6.8h61.2c1 0 1.9-.1 2.8-.4 2.4-.8 4.3-2.4 5.5-4.6 1.1-2.2 1.3-4.7.6-7.1zM663.3 325.5l32.8-116.9h6.3l32.1 116.9h-71.2zm143.5 492.9H677.2v-.4l132.6-188.9c1.1-1.6 1.7-3.4 1.7-5.4v-36.4c0-5.1-4.2-9.3-9.3-9.3h-204c-5.1 0-9.3 4.2-9.3 9.3v43c0 5.1 4.2 9.3 9.3 9.3h122.6v.4L587.7 828.9a9.35 9.35 0 00-1.7 5.4v36.4c0 5.1 4.2 9.3 9.3 9.3h211.4c5.1 0 9.3-4.2 9.3-9.3v-43a9.2 9.2 0 00-9.2-9.3zM416 702h-76V172c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v530h-76c-6.7 0-10.5 7.8-6.3 13l112 141.9a8 8 0 0012.6 0l112-141.9c4.1-5.2.4-13-6.3-13z"
+          />
+        </svg>
+      </span>
+      <span
+        aria-label="sort-descending"
+        className="anticon anticon-sort-descending s-o"
+        onClick={[Function]}
+        role="img"
+        tabIndex={-1}
+      >
+        <svg
+          aria-hidden="true"
+          data-icon="sort-descending"
+          fill="currentColor"
+          focusable="false"
+          height="1em"
+          viewBox="64 64 896 896"
+          width="1em"
+        >
+          <path
+            d="M839.6 433.8L749 150.5a9.24 9.24 0 00-8.9-6.5h-77.4c-4.1 0-7.6 2.6-8.9 6.5l-91.3 283.3c-.3.9-.5 1.9-.5 2.9 0 5.1 4.2 9.3 9.3 9.3h56.4c4.2 0 7.8-2.8 9-6.8l17.5-61.6h89l17.3 61.5c1.1 4 4.8 6.8 9 6.8h61.2c1 0 1.9-.1 2.8-.4 2.4-.8 4.3-2.4 5.5-4.6 1.1-2.2 1.3-4.7.6-7.1zM663.3 325.5l32.8-116.9h6.3l32.1 116.9h-71.2zm143.5 492.9H677.2v-.4l132.6-188.9c1.1-1.6 1.7-3.4 1.7-5.4v-36.4c0-5.1-4.2-9.3-9.3-9.3h-204c-5.1 0-9.3 4.2-9.3 9.3v43c0 5.1 4.2 9.3 9.3 9.3h122.6v.4L587.7 828.9a9.35 9.35 0 00-1.7 5.4v36.4c0 5.1 4.2 9.3 9.3 9.3h211.4c5.1 0 9.3-4.2 9.3-9.3v-43a9.2 9.2 0 00-9.2-9.3zM310.3 167.1a8 8 0 00-12.6 0L185.7 309c-4.2 5.3-.4 13 6.3 13h76v530c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V322h76c6.7 0 10.5-7.8 6.3-13l-112-141.9z"
+          />
+        </svg>
+      </span>
+    </div>
+    <div
+      className="ant-col ant-col-16 ant-col-offset-4"
+      style={Object {}}
+    >
+      <div
+        className="ant-divider ant-divider-horizontal"
+        role="separator"
+      />
+      <div
+        className="ant-spin ant-spin-lg ant-spin-spinning"
+      >
+        <span
+          className="ant-spin-dot ant-spin-dot-spin"
+        >
+          <i
+            className="ant-spin-dot-item"
+          />
+          <i
+            className="ant-spin-dot-item"
+          />
+          <i
+            className="ant-spin-dot-item"
+          />
+          <i
+            className="ant-spin-dot-item"
+          />
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+`;
