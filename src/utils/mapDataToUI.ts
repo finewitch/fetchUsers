@@ -1,4 +1,5 @@
 import { User } from '../types/User'
+
 export default function mapDataToUI(data: []): User[] {
     return data.map((user: any, index) => ({
         key: index,

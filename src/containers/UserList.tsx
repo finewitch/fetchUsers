@@ -5,40 +5,21 @@ import { UserOutlined, SortAscendingOutlined, SortDescendingOutlined } from '@an
 import { User } from '../types/User'
 import { columns } from '../utils/table'
 import { Spin } from 'antd';
-import fetchData from './utils_fetch'
-import mapDataToUI from '../utils/mapDataToUI'
+
 import sortUsers from '../utils/sortUsers'
+import { useFetch } from '../containers/useFetch'
 
 function UserList() {
-  const [users, setUsers] = useState<User[]>([])
-  const [isLoading, setIsLoading] = useState<boolean>(false)
+  console.log('hh')
+  const [{ data, isLoading, isError }] = useFetch('users')
+  const [users, setUsers] = useState<User[]>(data)
+  console.log(data, isLoading, isError)
   const [searchResults, setSearchResults] = useState<User[]>([])
   const [searchTerm, setSearchTerm] = useState<string>("")
   const [asc, setAsc] = useState<boolean>(false)
   const [desc, setDesc] = useState<boolean>(false)
-  useEffect(() => {
-    const runEffect = async () => {
-      setIsLoading(true)
-      try {
-        const data = await fetchData('users')
-        setIsLoading(false)
-        if (data && data.length) {
-          const users = mapDataToUI(data)
-          setUsers(users)
-        } else {
-          console.log('No users found')
-          setUsers([])
-        }
 
-      } catch (err) {
-        console.log(err)
-        setUsers([])
-      } finally {
-        setIsLoading(false)
-      }
-    }
-    runEffect()
-  }, [])
+  useEffect(() => { setUsers(data) }, [data])
 
   useEffect(() => {
     const regex = new RegExp(searchTerm, 'gi')
@@ -48,7 +29,7 @@ function UserList() {
 
   const setAscending = ((): void => {
     if (asc) return
-    const sortedUsers = sortUsers('asc', users)
+    const sortedUsers = sortUsers('asc', data)
 
     setUsers(sortedUsers)
     setAsc(true)
@@ -58,7 +39,7 @@ function UserList() {
 
   const setDescending = ((): void => {
     if (desc) return
-    const sortedUsers = sortUsers('desc', users)
+    const sortedUsers = sortUsers('desc', data)
 
     setUsers(sortedUsers)
     setAsc(false)
@@ -75,7 +56,7 @@ function UserList() {
           <Layout.Header>
             <Typography.Title><UserOutlined className="m-r" />Users List</Typography.Title>
             {isLoading ? (
-              <Input placeholder="Type name" className="i-s" onChange={onChangeHandler} disabled />
+              <Input placeholder="Type name" className="i-s" disabled />
             ) : (
                 <Input placeholder="Type name" className="i-s" onChange={onChangeHandler} />
               )}
